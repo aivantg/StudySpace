@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A3EFAE6F1FA3DE290077D4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE6E1FA3DE290077D4AA /* AppDelegate.swift */; };
-		A3EFAE711FA3DE290077D4AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE701FA3DE290077D4AA /* ViewController.swift */; };
+		A3EFAE711FA3DE290077D4AA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE701FA3DE290077D4AA /* MainViewController.swift */; };
 		A3EFAE741FA3DE290077D4AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EFAE721FA3DE290077D4AA /* Main.storyboard */; };
 		A3EFAE761FA3DE2A0077D4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3EFAE751FA3DE2A0077D4AA /* Assets.xcassets */; };
 		A3EFAE791FA3DE2A0077D4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EFAE771FA3DE2A0077D4AA /* LaunchScreen.storyboard */; };
 		A3EFAE881FA3E1640077D4AA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE871FA3E1640077D4AA /* SWRevealViewController.m */; };
+		A3EFAE8A1FA43A530077D4AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE891FA43A530077D4AA /* HomeViewController.swift */; };
+		A3EFAE8C1FA43AE70077D4AA /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE8B1FA43AE70077D4AA /* SessionsViewController.swift */; };
+		A3EFAE8E1FA43B1D0077D4AA /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE8D1FA43B1D0077D4AA /* NewGroupViewController.swift */; };
+		A3EFAE901FA43B2B0077D4AA /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE8F1FA43B2B0077D4AA /* FriendsViewController.swift */; };
+		A3EFAE921FA43B380077D4AA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE911FA43B380077D4AA /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3EFAE6B1FA3DE290077D4AA /* StudySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EFAE6E1FA3DE290077D4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3EFAE701FA3DE290077D4AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3EFAE701FA3DE290077D4AA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A3EFAE731FA3DE290077D4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3EFAE751FA3DE2A0077D4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3EFAE781FA3DE2A0077D4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -26,6 +31,11 @@
 		A3EFAE851FA3E1630077D4AA /* StudySpace-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudySpace-Bridging-Header.h"; sourceTree = "<group>"; };
 		A3EFAE861FA3E1640077D4AA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		A3EFAE871FA3E1640077D4AA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A3EFAE891FA43A530077D4AA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A3EFAE8B1FA43AE70077D4AA /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
+		A3EFAE8D1FA43B1D0077D4AA /* NewGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
+		A3EFAE8F1FA43B2B0077D4AA /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		A3EFAE911FA43B380077D4AA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +70,16 @@
 			children = (
 				A3EFAE801FA3E0E00077D4AA /* Libraries */,
 				A3EFAE6E1FA3DE290077D4AA /* AppDelegate.swift */,
-				A3EFAE701FA3DE290077D4AA /* ViewController.swift */,
+				A3EFAE701FA3DE290077D4AA /* MainViewController.swift */,
 				A3EFAE721FA3DE290077D4AA /* Main.storyboard */,
 				A3EFAE751FA3DE2A0077D4AA /* Assets.xcassets */,
 				A3EFAE771FA3DE2A0077D4AA /* LaunchScreen.storyboard */,
 				A3EFAE7A1FA3DE2A0077D4AA /* Info.plist */,
+				A3EFAE891FA43A530077D4AA /* HomeViewController.swift */,
+				A3EFAE8B1FA43AE70077D4AA /* SessionsViewController.swift */,
+				A3EFAE8D1FA43B1D0077D4AA /* NewGroupViewController.swift */,
+				A3EFAE8F1FA43B2B0077D4AA /* FriendsViewController.swift */,
+				A3EFAE911FA43B380077D4AA /* SettingsViewController.swift */,
 			);
 			path = StudySpace;
 			sourceTree = "<group>";
@@ -160,9 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3EFAE711FA3DE290077D4AA /* ViewController.swift in Sources */,
+				A3EFAE8C1FA43AE70077D4AA /* SessionsViewController.swift in Sources */,
+				A3EFAE8E1FA43B1D0077D4AA /* NewGroupViewController.swift in Sources */,
+				A3EFAE711FA3DE290077D4AA /* MainViewController.swift in Sources */,
 				A3EFAE6F1FA3DE290077D4AA /* AppDelegate.swift in Sources */,
+				A3EFAE901FA43B2B0077D4AA /* FriendsViewController.swift in Sources */,
 				A3EFAE881FA3E1640077D4AA /* SWRevealViewController.m in Sources */,
+				A3EFAE8A1FA43A530077D4AA /* HomeViewController.swift in Sources */,
+				A3EFAE921FA43B380077D4AA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +321,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRDKFK258V;
 				INFOPLIST_FILE = StudySpace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aivantgoyal.StudySpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -318,7 +340,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRDKFK258V;
 				INFOPLIST_FILE = StudySpace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aivantgoyal.StudySpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
