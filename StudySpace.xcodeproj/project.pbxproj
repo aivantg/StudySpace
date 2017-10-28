@@ -18,9 +18,19 @@
 		A3EFAE8E1FA43B1D0077D4AA /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE8D1FA43B1D0077D4AA /* NewGroupViewController.swift */; };
 		A3EFAE901FA43B2B0077D4AA /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE8F1FA43B2B0077D4AA /* FriendsViewController.swift */; };
 		A3EFAE921FA43B380077D4AA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE911FA43B380077D4AA /* SettingsViewController.swift */; };
+		A3EFAE941FA447390077D4AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3EFAE931FA447380077D4AA /* GoogleService-Info.plist */; };
+		A3EFAE9F1FA44C5E0077D4AA /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE991FA44C5E0077D4AA /* Schedule.swift */; };
+		A3EFAEA01FA44C5E0077D4AA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE9A1FA44C5E0077D4AA /* Location.swift */; };
+		A3EFAEA11FA44C5E0077D4AA /* StudyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE9B1FA44C5E0077D4AA /* StudyGroup.swift */; };
+		A3EFAEA21FA44C5E0077D4AA /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE9C1FA44C5E0077D4AA /* Course.swift */; };
+		A3EFAEA31FA44C5E0077D4AA /* StudySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE9D1FA44C5E0077D4AA /* StudySession.swift */; };
+		A3EFAEA41FA44C5E0077D4AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE9E1FA44C5E0077D4AA /* User.swift */; };
+		D1C41F604A09C9E130CF727B /* Pods_StudySpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF815DB2A78DB2CE991C7087 /* Pods_StudySpace.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35BDB68871791129D0DB41BD /* Pods-StudySpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudySpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudySpace/Pods-StudySpace.release.xcconfig"; sourceTree = "<group>"; };
+		528BA5CBD88C30A722CB2761 /* Pods-StudySpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudySpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudySpace/Pods-StudySpace.debug.xcconfig"; sourceTree = "<group>"; };
 		A3EFAE6B1FA3DE290077D4AA /* StudySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EFAE6E1FA3DE290077D4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3EFAE701FA3DE290077D4AA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +46,14 @@
 		A3EFAE8D1FA43B1D0077D4AA /* NewGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
 		A3EFAE8F1FA43B2B0077D4AA /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		A3EFAE911FA43B380077D4AA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A3EFAE931FA447380077D4AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3EFAE991FA44C5E0077D4AA /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		A3EFAE9A1FA44C5E0077D4AA /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A3EFAE9B1FA44C5E0077D4AA /* StudyGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyGroup.swift; sourceTree = "<group>"; };
+		A3EFAE9C1FA44C5E0077D4AA /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		A3EFAE9D1FA44C5E0077D4AA /* StudySession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudySession.swift; sourceTree = "<group>"; };
+		A3EFAE9E1FA44C5E0077D4AA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BF815DB2A78DB2CE991C7087 /* Pods_StudySpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudySpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +61,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C41F604A09C9E130CF727B /* Pods_StudySpace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AA239517D741324803E9348 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF815DB2A78DB2CE991C7087 /* Pods_StudySpace.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42097F2506FB7E9EAD82AF64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				528BA5CBD88C30A722CB2761 /* Pods-StudySpace.debug.xcconfig */,
+				35BDB68871791129D0DB41BD /* Pods-StudySpace.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A3EFAE621FA3DE290077D4AA = {
 			isa = PBXGroup;
 			children = (
 				A3EFAE6D1FA3DE290077D4AA /* StudySpace */,
 				A3EFAE6C1FA3DE290077D4AA /* Products */,
+				42097F2506FB7E9EAD82AF64 /* Pods */,
+				2AA239517D741324803E9348 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,28 +106,21 @@
 		A3EFAE6D1FA3DE290077D4AA /* StudySpace */ = {
 			isa = PBXGroup;
 			children = (
-				A3EFAE801FA3E0E00077D4AA /* Libraries */,
 				A3EFAE6E1FA3DE290077D4AA /* AppDelegate.swift */,
-				A3EFAE701FA3DE290077D4AA /* MainViewController.swift */,
-				A3EFAE721FA3DE290077D4AA /* Main.storyboard */,
-				A3EFAE751FA3DE2A0077D4AA /* Assets.xcassets */,
-				A3EFAE771FA3DE2A0077D4AA /* LaunchScreen.storyboard */,
-				A3EFAE7A1FA3DE2A0077D4AA /* Info.plist */,
-				A3EFAE891FA43A530077D4AA /* HomeViewController.swift */,
-				A3EFAE8B1FA43AE70077D4AA /* SessionsViewController.swift */,
-				A3EFAE8D1FA43B1D0077D4AA /* NewGroupViewController.swift */,
-				A3EFAE8F1FA43B2B0077D4AA /* FriendsViewController.swift */,
-				A3EFAE911FA43B380077D4AA /* SettingsViewController.swift */,
+				A3EFAE961FA448CA0077D4AA /* Model */,
+				A3EFAE951FA448C10077D4AA /* View */,
+				A3EFAE971FA448DE0077D4AA /* Supporting Files */,
+				A3EFAE801FA3E0E00077D4AA /* External Frameworks */,
 			);
 			path = StudySpace;
 			sourceTree = "<group>";
 		};
-		A3EFAE801FA3E0E00077D4AA /* Libraries */ = {
+		A3EFAE801FA3E0E00077D4AA /* External Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A3EFAE811FA3E14A0077D4AA /* SWRevealViewController */,
 			);
-			path = Libraries;
+			path = "External Frameworks";
 			sourceTree = "<group>";
 		};
 		A3EFAE811FA3E14A0077D4AA /* SWRevealViewController */ = {
@@ -102,6 +133,52 @@
 			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
+		A3EFAE951FA448C10077D4AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3EFAE981FA449080077D4AA /* View Controllers */,
+				A3EFAE721FA3DE290077D4AA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3EFAE961FA448CA0077D4AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3EFAE9C1FA44C5E0077D4AA /* Course.swift */,
+				A3EFAE9A1FA44C5E0077D4AA /* Location.swift */,
+				A3EFAE991FA44C5E0077D4AA /* Schedule.swift */,
+				A3EFAE9B1FA44C5E0077D4AA /* StudyGroup.swift */,
+				A3EFAE9D1FA44C5E0077D4AA /* StudySession.swift */,
+				A3EFAE9E1FA44C5E0077D4AA /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3EFAE971FA448DE0077D4AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3EFAE931FA447380077D4AA /* GoogleService-Info.plist */,
+				A3EFAE751FA3DE2A0077D4AA /* Assets.xcassets */,
+				A3EFAE771FA3DE2A0077D4AA /* LaunchScreen.storyboard */,
+				A3EFAE7A1FA3DE2A0077D4AA /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3EFAE981FA449080077D4AA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3EFAE701FA3DE290077D4AA /* MainViewController.swift */,
+				A3EFAE891FA43A530077D4AA /* HomeViewController.swift */,
+				A3EFAE8B1FA43AE70077D4AA /* SessionsViewController.swift */,
+				A3EFAE8D1FA43B1D0077D4AA /* NewGroupViewController.swift */,
+				A3EFAE8F1FA43B2B0077D4AA /* FriendsViewController.swift */,
+				A3EFAE911FA43B380077D4AA /* SettingsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3EFAE7D1FA3DE2A0077D4AA /* Build configuration list for PBXNativeTarget "StudySpace" */;
 			buildPhases = (
+				DF428A9DE05E4C8EDBA15E99 /* [CP] Check Pods Manifest.lock */,
 				A3EFAE671FA3DE290077D4AA /* Sources */,
 				A3EFAE681FA3DE290077D4AA /* Frameworks */,
 				A3EFAE691FA3DE290077D4AA /* Resources */,
+				5BD3EC78D761BEB10C269679 /* [CP] Embed Pods Frameworks */,
+				FAA62B0407B31CA7CE444153 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3EFAE791FA3DE2A0077D4AA /* LaunchScreen.storyboard in Resources */,
+				A3EFAE941FA447390077D4AA /* GoogleService-Info.plist in Resources */,
 				A3EFAE761FA3DE2A0077D4AA /* Assets.xcassets in Resources */,
 				A3EFAE741FA3DE290077D4AA /* Main.storyboard in Resources */,
 			);
@@ -170,14 +251,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5BD3EC78D761BEB10C269679 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StudySpace/Pods-StudySpace-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudySpace/Pods-StudySpace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF428A9DE05E4C8EDBA15E99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudySpace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAA62B0407B31CA7CE444153 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudySpace/Pods-StudySpace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3EFAE671FA3DE290077D4AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EFAEA21FA44C5E0077D4AA /* Course.swift in Sources */,
 				A3EFAE8C1FA43AE70077D4AA /* SessionsViewController.swift in Sources */,
 				A3EFAE8E1FA43B1D0077D4AA /* NewGroupViewController.swift in Sources */,
+				A3EFAEA01FA44C5E0077D4AA /* Location.swift in Sources */,
+				A3EFAEA11FA44C5E0077D4AA /* StudyGroup.swift in Sources */,
 				A3EFAE711FA3DE290077D4AA /* MainViewController.swift in Sources */,
+				A3EFAEA41FA44C5E0077D4AA /* User.swift in Sources */,
+				A3EFAE9F1FA44C5E0077D4AA /* Schedule.swift in Sources */,
+				A3EFAEA31FA44C5E0077D4AA /* StudySession.swift in Sources */,
 				A3EFAE6F1FA3DE290077D4AA /* AppDelegate.swift in Sources */,
 				A3EFAE901FA43B2B0077D4AA /* FriendsViewController.swift in Sources */,
 				A3EFAE881FA3E1640077D4AA /* SWRevealViewController.m in Sources */,
@@ -317,12 +458,13 @@
 		};
 		A3EFAE7E1FA3DE2A0077D4AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528BA5CBD88C30A722CB2761 /* Pods-StudySpace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WRDKFK258V;
-				INFOPLIST_FILE = StudySpace/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/StudySpace/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aivantgoyal.StudySpace;
@@ -336,12 +478,13 @@
 		};
 		A3EFAE7F1FA3DE2A0077D4AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35BDB68871791129D0DB41BD /* Pods-StudySpace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WRDKFK258V;
-				INFOPLIST_FILE = StudySpace/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/StudySpace/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aivantgoyal.StudySpace;
