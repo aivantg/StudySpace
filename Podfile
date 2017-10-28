@@ -8,4 +8,5 @@ target 'StudySpace' do
   # Pods for StudySpace
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 end

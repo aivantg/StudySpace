@@ -7,12 +7,27 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class HomeViewController: MainViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //tableView.dataSource = self
+        var ref = FIRDatabase.database().reference()
+        var courseRef = ref.child("courses").childByAutoId()
+        courseRef.child("name").setValue("CS 61A")
+        courseRef.child("id").setValue("CS61A 001")
+        courseRef.child("professor").setValue("John Denero")
+        
+        courseRef = ref.child("courses").childByAutoId()
+        courseRef.child("name").setValue("CS 61B")
+        courseRef.child("id").setValue("CS61B 001")
+        courseRef.child("professor").setValue("Paul Hilfinger")
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -33,3 +48,14 @@ class HomeViewController: MainViewController {
     */
 
 }
+//
+//extension HomeViewController: UITableViewDataSource{
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 10
+//    }
+//}
+

@@ -21,6 +21,6 @@ class User{
     var year : String?
     var major : String?
     var friends : [String]? //user objects
-    var groups : [String] //study group objects
+    var groups : [String]? //study group objects
     
 }

@@ -110,17 +110,17 @@
 				A3EFAE961FA448CA0077D4AA /* Model */,
 				A3EFAE951FA448C10077D4AA /* View */,
 				A3EFAE971FA448DE0077D4AA /* Supporting Files */,
-				A3EFAE801FA3E0E00077D4AA /* External Frameworks */,
+				A3EFAE801FA3E0E00077D4AA /* Libraries */,
 			);
 			path = StudySpace;
 			sourceTree = "<group>";
 		};
-		A3EFAE801FA3E0E00077D4AA /* External Frameworks */ = {
+		A3EFAE801FA3E0E00077D4AA /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
 				A3EFAE811FA3E14A0077D4AA /* SWRevealViewController */,
 			);
-			path = "External Frameworks";
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 		A3EFAE811FA3E14A0077D4AA /* SWRevealViewController */ = {
@@ -259,10 +259,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StudySpace/Pods-StudySpace-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
