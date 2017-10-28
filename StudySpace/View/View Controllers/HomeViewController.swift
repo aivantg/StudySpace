@@ -12,50 +12,49 @@ import FirebaseDatabase
 class HomeViewController: MainViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    var groups = [StudyGroup]()
+    var ref = FIRDatabase.database().reference(withPath: "groups")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tableView.dataSource = self
-        var ref = FIRDatabase.database().reference()
-        var courseRef = ref.child("courses").childByAutoId()
-        courseRef.child("name").setValue("CS 61A")
-        courseRef.child("id").setValue("CS61A 001")
-        courseRef.child("professor").setValue("John Denero")
-        
-        courseRef = ref.child("courses").childByAutoId()
-        courseRef.child("name").setValue("CS 61B")
-        courseRef.child("id").setValue("CS61B 001")
-        courseRef.child("professor").setValue("Paul Hilfinger")
-        
-        
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        tableView.dataSource = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        ref.observe(.value) { (snapshot) in
+            print("FOUND NEW SNAPSHOT")
+            self.groups = [StudyGroup]()
+            for child in snapshot.children{
+                if let child = child as? FIRDataSnapshot {
+                    self.groups.append(StudyGroup(snapshot: child))
+                }
+            }
+            self.tableView.reloadData()
+        }
     }
-    */
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        ref.removeAllObservers()
+    }
+
 
 }
-//
-//extension HomeViewController: UITableViewDataSource{
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 10
-//    }
-//}
+
+extension HomeViewController: UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return groups.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell", for: indexPath) as! GroupTableViewCell
+        cell.group = groups[indexPath.row]
+        return cell
+    }
+}
 
