@@ -25,6 +25,10 @@
 		A3EFAEA21FA44C5E0077D4AA /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE9C1FA44C5E0077D4AA /* Course.swift */; };
 		A3EFAEA31FA44C5E0077D4AA /* StudySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE9D1FA44C5E0077D4AA /* StudySession.swift */; };
 		A3EFAEA41FA44C5E0077D4AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAE9E1FA44C5E0077D4AA /* User.swift */; };
+		A3EFAEA61FA468A80077D4AA /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAEA51FA468A80077D4AA /* GroupTableViewCell.swift */; };
+		A3EFAEA81FA471D70077D4AA /* SessionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAEA71FA471D70077D4AA /* SessionsTableViewCell.swift */; };
+		A3EFAEAB1FA475230077D4AA /* FFAPSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAEAA1FA475230077D4AA /* FFAPSegmentedControl.m */; };
+		A3EFAEAD1FA478780077D4AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAEAC1FA478780077D4AA /* LoginViewController.swift */; };
 		D1C41F604A09C9E130CF727B /* Pods_StudySpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF815DB2A78DB2CE991C7087 /* Pods_StudySpace.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,11 @@
 		A3EFAE9C1FA44C5E0077D4AA /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		A3EFAE9D1FA44C5E0077D4AA /* StudySession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudySession.swift; sourceTree = "<group>"; };
 		A3EFAE9E1FA44C5E0077D4AA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3EFAEA51FA468A80077D4AA /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupTableViewCell.swift; path = Cells/GroupTableViewCell.swift; sourceTree = "<group>"; };
+		A3EFAEA71FA471D70077D4AA /* SessionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionsTableViewCell.swift; path = Cells/SessionsTableViewCell.swift; sourceTree = "<group>"; };
+		A3EFAEA91FA475230077D4AA /* FFAPSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAPSegmentedControl.h; sourceTree = "<group>"; };
+		A3EFAEAA1FA475230077D4AA /* FFAPSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAPSegmentedControl.m; sourceTree = "<group>"; };
+		A3EFAEAC1FA478780077D4AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "View Controllers/LoginViewController.swift"; sourceTree = "<group>"; };
 		BF815DB2A78DB2CE991C7087 /* Pods_StudySpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudySpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,6 +127,8 @@
 		A3EFAE801FA3E0E00077D4AA /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				A3EFAEA91FA475230077D4AA /* FFAPSegmentedControl.h */,
+				A3EFAEAA1FA475230077D4AA /* FFAPSegmentedControl.m */,
 				A3EFAE811FA3E14A0077D4AA /* SWRevealViewController */,
 			);
 			path = Libraries;
@@ -138,6 +149,9 @@
 			children = (
 				A3EFAE981FA449080077D4AA /* View Controllers */,
 				A3EFAE721FA3DE290077D4AA /* Main.storyboard */,
+				A3EFAEAC1FA478780077D4AA /* LoginViewController.swift */,
+				A3EFAEA51FA468A80077D4AA /* GroupTableViewCell.swift */,
+				A3EFAEA71FA471D70077D4AA /* SessionsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EFAEAD1FA478780077D4AA /* LoginViewController.swift in Sources */,
+				A3EFAEA81FA471D70077D4AA /* SessionsTableViewCell.swift in Sources */,
 				A3EFAEA21FA44C5E0077D4AA /* Course.swift in Sources */,
 				A3EFAE8C1FA43AE70077D4AA /* SessionsViewController.swift in Sources */,
 				A3EFAE8E1FA43B1D0077D4AA /* NewGroupViewController.swift in Sources */,
@@ -321,6 +337,8 @@
 				A3EFAEA41FA44C5E0077D4AA /* User.swift in Sources */,
 				A3EFAE9F1FA44C5E0077D4AA /* Schedule.swift in Sources */,
 				A3EFAEA31FA44C5E0077D4AA /* StudySession.swift in Sources */,
+				A3EFAEAB1FA475230077D4AA /* FFAPSegmentedControl.m in Sources */,
+				A3EFAEA61FA468A80077D4AA /* GroupTableViewCell.swift in Sources */,
 				A3EFAE6F1FA3DE290077D4AA /* AppDelegate.swift in Sources */,
 				A3EFAE901FA43B2B0077D4AA /* FriendsViewController.swift in Sources */,
 				A3EFAE881FA3E1640077D4AA /* SWRevealViewController.m in Sources */,

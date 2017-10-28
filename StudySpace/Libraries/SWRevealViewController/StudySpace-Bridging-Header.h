@@ -3,4 +3,5 @@
 //
 
 #import "SWRevealViewController.h"
+#import "FFAPSegmentedControl.h"
 
