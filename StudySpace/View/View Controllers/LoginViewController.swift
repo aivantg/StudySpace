@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
                 print("Error Creating User: \(error!)")
                 return
             }
+            print("CREATED USER \(user?.id ?? "NOID")")
             FIRDatabase.database().reference(withPath: "users").child(user?.uid ?? "id").child("year").setValue(2021)
             self.performSegue(withIdentifier: "openHome", sender: self)
         }
