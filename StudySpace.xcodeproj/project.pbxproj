@@ -30,6 +30,9 @@
 		A3EFAEAB1FA475230077D4AA /* FFAPSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAEAA1FA475230077D4AA /* FFAPSegmentedControl.m */; };
 		A3EFAEAD1FA478780077D4AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFAEAC1FA478780077D4AA /* LoginViewController.swift */; };
 		D1C41F604A09C9E130CF727B /* Pods_StudySpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF815DB2A78DB2CE991C7087 /* Pods_StudySpace.framework */; };
+		E834467B1FA4BC5500D77315 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834467A1FA4BC5500D77315 /* SearchViewController.swift */; };
+		E834467D1FA4C64E00D77315 /* NewSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834467C1FA4C64E00D77315 /* NewSessionViewController.swift */; };
+		E834467F1FA4D87C00D77315 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834467E1FA4D87C00D77315 /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		A3EFAEAA1FA475230077D4AA /* FFAPSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAPSegmentedControl.m; sourceTree = "<group>"; };
 		A3EFAEAC1FA478780077D4AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "View Controllers/LoginViewController.swift"; sourceTree = "<group>"; };
 		BF815DB2A78DB2CE991C7087 /* Pods_StudySpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudySpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E834467A1FA4BC5500D77315 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E834467C1FA4C64E00D77315 /* NewSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionViewController.swift; sourceTree = "<group>"; };
+		E834467E1FA4D87C00D77315 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,7 @@
 				A3EFAEAC1FA478780077D4AA /* LoginViewController.swift */,
 				A3EFAEA51FA468A80077D4AA /* GroupTableViewCell.swift */,
 				A3EFAEA71FA471D70077D4AA /* SessionsTableViewCell.swift */,
+				E834467E1FA4D87C00D77315 /* UserTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +196,8 @@
 				A3EFAE8D1FA43B1D0077D4AA /* NewGroupViewController.swift */,
 				A3EFAE8F1FA43B2B0077D4AA /* FriendsViewController.swift */,
 				A3EFAE911FA43B380077D4AA /* SettingsViewController.swift */,
+				E834467A1FA4BC5500D77315 /* SearchViewController.swift */,
+				E834467C1FA4C64E00D77315 /* NewSessionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -273,13 +282,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StudySpace/Pods-StudySpace-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -330,6 +343,7 @@
 				A3EFAEA81FA471D70077D4AA /* SessionsTableViewCell.swift in Sources */,
 				A3EFAEA21FA44C5E0077D4AA /* Course.swift in Sources */,
 				A3EFAE8C1FA43AE70077D4AA /* SessionsViewController.swift in Sources */,
+				E834467B1FA4BC5500D77315 /* SearchViewController.swift in Sources */,
 				A3EFAE8E1FA43B1D0077D4AA /* NewGroupViewController.swift in Sources */,
 				A3EFAEA01FA44C5E0077D4AA /* Location.swift in Sources */,
 				A3EFAEA11FA44C5E0077D4AA /* StudyGroup.swift in Sources */,
@@ -341,8 +355,10 @@
 				A3EFAEA61FA468A80077D4AA /* GroupTableViewCell.swift in Sources */,
 				A3EFAE6F1FA3DE290077D4AA /* AppDelegate.swift in Sources */,
 				A3EFAE901FA43B2B0077D4AA /* FriendsViewController.swift in Sources */,
+				E834467F1FA4D87C00D77315 /* UserTableViewCell.swift in Sources */,
 				A3EFAE881FA3E1640077D4AA /* SWRevealViewController.m in Sources */,
 				A3EFAE8A1FA43A530077D4AA /* HomeViewController.swift in Sources */,
+				E834467D1FA4C64E00D77315 /* NewSessionViewController.swift in Sources */,
 				A3EFAE921FA43B380077D4AA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

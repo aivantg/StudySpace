@@ -9,4 +9,6 @@ target 'StudySpace' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
+  pod 'Presentr'
+  pod 'DropDown'
 end

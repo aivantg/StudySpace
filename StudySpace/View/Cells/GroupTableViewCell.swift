@@ -17,9 +17,16 @@ class GroupTableViewCell: UITableViewCell {
             }
         }
     }
+    var index : Int = 0
     
     
-
+    @IBOutlet weak var dashLabel: UILabel!
+    @IBOutlet weak var membersLabel: UILabel!
+    @IBOutlet weak var groupImage: UIImageView!
+    @IBOutlet weak var groupTitle: UILabel!
+    @IBOutlet weak var groupMembers: UILabel!
+    @IBOutlet weak var groupClass: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -32,8 +39,31 @@ class GroupTableViewCell: UITableViewCell {
     }
     
     func updateView(){
-        self.textLabel!.text = group!.name
-        self.detailTextLabel!.text = group!.description
+        if group!.course?.contains("CS") ?? false{
+            self.groupImage.image = #imageLiteral(resourceName: "terminal")
+        }else if group!.course?.contains("Math") ?? false {
+            self.groupImage.image = #imageLiteral(resourceName: "math")
+        }else if group!.course?.contains("Soc") ?? false {
+            self.groupImage.image = #imageLiteral(resourceName: "books")
+        }else {
+            self.groupImage.image = #imageLiteral(resourceName: "innovate")
+        }
+        self.groupTitle.text = group!.name
+        self.groupClass.text = group!.course
+        if group!.searching {
+            self.dashLabel.isHidden = true
+            self.groupMembers.isHidden = true
+            self.groupTitle.textColor = UIColor.orange
+            self.membersLabel.text = "Tap to find a group"
+        }else{
+            self.groupTitle.textColor = UIColor.black
+            self.membersLabel.text = "Members"
+            group!.getMemberString { (string) in
+                self.groupMembers.text = string
+            }
+            self.dashLabel.isHidden = false
+            self.groupMembers.isHidden = false
+        }
     }
 
 }

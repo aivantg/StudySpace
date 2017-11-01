@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import FirebaseDatabase
 
 class User{
     
     var profPic : String?
     var classes : [String]? //class objects
-    var username : String?
+    var username : String = ""
     var email : String?
     var phoneNumber : String?
     var password : String?
@@ -20,7 +21,16 @@ class User{
     var schedule : Schedule?
     var year : String?
     var major : String?
+    var courses : String?
     var friends : [String]? //user objects
     var groups : [String]? //study group objects
+    
+    init(snapshot: FIRDataSnapshot) {
+        if let postDict = snapshot.value as? [String : AnyObject] {
+            self.username = postDict["name"] as? String ?? ""
+            self.courses = postDict["classes"] as? String
+            self.year = postDict["year"] as? String
+        }
+    }
     
 }
